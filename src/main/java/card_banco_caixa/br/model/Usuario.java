@@ -15,7 +15,7 @@ public class Usuario {
     private List<Fatura> faturas;
 
     private Baner baner;
-    
+
     private List<Novos> novos;
 
 
