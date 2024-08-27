@@ -1,4 +1,8 @@
 package card_banco_caixa.br.model;
 
-public class Fatura {
+
+import jakarta.persistence.Entity;
+
+@Entity(name = "tb_fatura")
+public class Fatura extends ItemDaBase {
 }
