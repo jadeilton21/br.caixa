@@ -1,4 +1,4 @@
-package card_banco_caixa.br.model;
+package card_banco_caixa.br.doMain.model;
 
 
 import jakarta.persistence.GeneratedValue;
