@@ -26,7 +26,51 @@ public class Usuario {
     private List<Novos> novos;
 
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 
+    public String getNome() {
+        return nome;
+    }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Conta getConta() {
+        return conta;
+    }
+
+    public void setConta(Conta conta) {
+        this.conta = conta;
+    }
+
+    public List<Fatura> getFaturas() {
+        return faturas;
+    }
+
+    public void setFaturas(List<Fatura> faturas) {
+        this.faturas = faturas;
+    }
+
+    public Baner getBaner() {
+        return baner;
+    }
+
+    public void setBaner(Baner baner) {
+        this.baner = baner;
+    }
+
+    public List<Novos> getNovos() {
+        return novos;
+    }
+
+    public void setNovos(List<Novos> novos) {
+        this.novos = novos;
+    }
 }
