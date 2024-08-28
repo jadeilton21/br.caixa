@@ -1,4 +1,4 @@
-package card_banco_caixa.br.repository;
+package card_banco_caixa.br.doMain.repository;
 
 
 import org.springframework.stereotype.Repository;
