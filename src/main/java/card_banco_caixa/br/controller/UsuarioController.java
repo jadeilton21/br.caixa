@@ -1,6 +1,7 @@
 package card_banco_caixa.br.controller;
 
 
+import card_banco_caixa.br.service.UsuarioService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
