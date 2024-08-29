@@ -6,4 +6,7 @@ public interface UsuarioService {
 
 
     Usuario encontrarPoId(Long id);
+
+    Usuario criarUsuario(Usuario usuarioCriar);
+    
 }
