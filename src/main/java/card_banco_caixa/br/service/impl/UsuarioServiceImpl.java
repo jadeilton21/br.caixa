@@ -1,4 +1,8 @@
 package card_banco_caixa.br.service.impl;
 
-public class UsuarioServiceImpl {
+import card_banco_caixa.br.service.UsuarioService;
+
+public class UsuarioServiceImpl implements UsuarioService {
+
+
 }
