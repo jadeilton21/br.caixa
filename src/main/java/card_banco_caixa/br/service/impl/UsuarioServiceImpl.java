@@ -1,14 +1,26 @@
 package card_banco_caixa.br.service.impl;
 
 import card_banco_caixa.br.doMain.model.Usuario;
+import card_banco_caixa.br.doMain.repository.UsuarioRepository;
 import card_banco_caixa.br.service.UsuarioService;
+import org.springframework.stereotype.Service;
 
+import java.util.NoSuchElementException;
+
+
+@Service
 public class UsuarioServiceImpl implements UsuarioService {
 
 
+    private final UsuarioRepository usuarioRepository;
+
+    public UsuarioServiceImpl(UsuarioRepository usuarioRepository) {
+        this.usuarioRepository = usuarioRepository;
+    }
+
     @Override
     public Usuario encontrarUsuarioPoId(Long id) {
-        return null;
+        return  usuarioRepository.findById(id).orElseThrow(NoSuchElementException::new);
     }
 
     @Override
