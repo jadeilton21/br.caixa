@@ -25,4 +25,10 @@ public class ManipuladorDeExcecaoGlobal {
     public ResponseEntity<String> handleNotFoundException(NoSuchElementException notFoundException) {
         return new ResponseEntity<>("Resource ID not found.", HttpStatus.NOT_FOUND);
     }
+    @ExceptionHandler(Throwable.class)
+    public ResponseEntity<String> handleUnexpectedException(Throwable unexpectedException) {
+        var message = "Unexpected server error, see the logs.";
+        logger.error(message, unexpectedException);
+        return new ResponseEntity<>(message, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 }
