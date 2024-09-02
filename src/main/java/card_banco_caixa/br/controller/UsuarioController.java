@@ -22,7 +22,6 @@ public class UsuarioController {
 
 
 
-
     @GetMapping("/{id}")
     private ResponseEntity<Usuario> encontrarUsuarioPoId(@PathVariable Long id){
         var user = usuarioService.encontrarUsuarioPoId(id);
