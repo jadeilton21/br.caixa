@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
 
-    Boolean existePorContaNumero(String contaNumero);
+    Boolean existsByNumeroConta(String contaNumero);
 }
