@@ -25,7 +25,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public Usuario criarUsuario(Usuario usuarioCriar) {
-        if (usuarioRepository.existePorContaNumero(usuarioCriar.getConta().getNumero())) {
+        if (usuarioRepository.existsByNumeroConta(usuarioCriar.getConta().getNumero())) {
             throw new IllegalArgumentException("This Account number already exists.");
         }
         return usuarioRepository.save(usuarioCriar);
