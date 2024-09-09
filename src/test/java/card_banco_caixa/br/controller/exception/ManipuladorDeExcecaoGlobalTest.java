@@ -28,7 +28,8 @@ class ManipuladorDeExcecaoGlobalTest {
                 .perform(post("/"))
                 .andReturn().getResponse();
 
-        assertThat(response.getStatus()).isEqualTo(HttpStatus.BAD_REQUEST.value());
+        assertThat(response.getStatus())
+                .isEqualTo(HttpStatus.BAD_REQUEST.value());
     }
 
     @Test
