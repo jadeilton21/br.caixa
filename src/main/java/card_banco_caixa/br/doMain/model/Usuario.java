@@ -26,6 +26,13 @@ public class Usuario {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Novos> novos;
 
+    public String getNumeroConta() {
+        return numeroConta;
+    }
+
+    public void setNumeroConta(String numeroConta) {
+        this.numeroConta = numeroConta;
+    }
 
     public Long getId() {
         return id;
