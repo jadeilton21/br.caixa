@@ -42,4 +42,10 @@ class ManipuladorDeExcecaoGlobalTest {
 
         assertThat(response.getStatus()).isEqualTo(HttpStatus.BAD_REQUEST.value());
     }
+
+
+    @Test
+    @DisplayName("Deve Devolver Código Http 404 quando informações forem invalidas..")
+    void handleUnexpectedException() throws Exception {
+    }
 }
