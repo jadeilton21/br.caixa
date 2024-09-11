@@ -31,6 +31,7 @@ class UsuarioServiceTest {
     }
 
     @Test
-    void criarUsuario() {
+    @DisplayName("Deve Devolver Código http 404 qaundo informações forem invalidas..")
+    void criarUsuario() throws Exception {
     }
 }
