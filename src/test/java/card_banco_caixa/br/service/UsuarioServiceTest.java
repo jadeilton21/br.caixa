@@ -33,5 +33,8 @@ class UsuarioServiceTest {
     @Test
     @DisplayName("Deve Devolver Código http 404 qaundo informações forem invalidas..")
     void criarUsuario() throws Exception {
+        var response = mockMvc.perform(post("")).andReturn().getResponse();
+        assertThat(response.getStatus())
+                .isEqualTo(HttpStatus.BAD_REQUEST.value());
     }
 }
