@@ -41,6 +41,7 @@ class UsuarioServiceImplTest {
     }
 
     @Test
-    void alterarUsuario()  {
+    @DisplayName("Deve Devolver Código http 404 qaundo informações forem invalidas..")
+    void alterarUsuario() throws Exception {
     }
 }
