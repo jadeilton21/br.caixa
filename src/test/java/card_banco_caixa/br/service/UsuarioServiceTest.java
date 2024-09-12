@@ -21,7 +21,7 @@ class UsuarioServiceTest {
 
 
     @Test
-    @DisplayName("Deve Devolver Código http 404 qaundo informações forem invalidas..")
+    @DisplayName("Deve Devolver Código http 404 quando informações forem invalidas..")
     void encontrarUsuarioPoId() throws Exception {
 
         var response = mockMvc.perform(post("")).andReturn().getResponse();
@@ -31,7 +31,7 @@ class UsuarioServiceTest {
     }
 
     @Test
-    @DisplayName("Deve Devolver Código http 404 qaundo informações forem invalidas..")
+    @DisplayName("Deve Devolver Código http 404 quando informações forem invalidas..")
     void criarUsuario() throws Exception {
         var response = mockMvc.perform(post("")).andReturn().getResponse();
         assertThat(response.getStatus())
