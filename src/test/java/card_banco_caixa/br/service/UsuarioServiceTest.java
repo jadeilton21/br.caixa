@@ -36,5 +36,6 @@ class UsuarioServiceTest {
         var response = mockMvc.perform(post("")).andReturn().getResponse();
         assertThat(response.getStatus())
                 .isEqualTo(HttpStatus.BAD_REQUEST.value());
+        
     }
 }
