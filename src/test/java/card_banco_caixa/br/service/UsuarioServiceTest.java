@@ -43,6 +43,6 @@ class UsuarioServiceTest {
 
     @Test
     @DisplayName("Deve Devolver Código http 404 quando informações forem invalidas...")
-    void alterarUsuario() {
+    void alterarUsuario() throws Exception {
     }
 }
