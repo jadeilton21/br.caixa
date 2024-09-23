@@ -38,5 +38,10 @@ class UsuarioServiceTest {
         assertThat(response.getStatus())
                 .isEqualTo(HttpStatus.BAD_REQUEST.value());
 
+        
+    }
+
+    @Test
+    void alterarUsuario() {
     }
 }
