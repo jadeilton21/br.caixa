@@ -36,7 +36,7 @@ class UsuarioServiceTest {
     void criarUsuario() throws Exception {
         var response = mockMvc.perform(post("")).andReturn().getResponse();
         assertThat(response.getStatus())
-                .isEqualTo(HttpStatus.BAD_REQUEST.value());
+                .isEqualTo(HttpStatus.BAD_REQUEST.value()); 
     }
 
     @Test
