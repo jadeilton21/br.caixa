@@ -30,7 +30,6 @@ class UsuarioServiceTest {
                 .isEqualTo(HttpStatus.BAD_REQUEST.value());
 
     }
-
     @Test
     @DisplayName("Deve Devolver Código http 404 quando informações forem invalidas..")
     void criarUsuario() throws Exception {
