@@ -9,4 +9,5 @@ public interface UsuarioService {
 
     Usuario criarUsuario(Usuario usuarioCriar);
     Usuario alterarUsuario(Usuario usuarioAlterar);
+    
 }
